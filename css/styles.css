@@ -1,33 +1,8 @@
+#input-qty, #input-unit-cost {
+	width: 50%;
+}
+
 .photo-width {
-	width: 650px;
-	padding: 25px;
-}
-
-.input-word-out, .scrabble-score {
-	font-weight: bold;
-	border: 2px solid black;
-	background-color: Wheat;
-	padding: 1px;
-}
-
-.small-type {
-	font-size: 75%;
-	font-style: italic;
-}
-
-#show-results {
-	display: none;
-	margin-top: 20px;
-}
-
-.glyphicon {
-	font-family: "Zapf Dingbats";
-}
-
-.glyphicon-ok:before {
-  content: "\02714";
-}
-
-.glyphicon-remove:before {
-  content: "\02716";
+	width: 250px;
+	padding-right: 24px;
 }

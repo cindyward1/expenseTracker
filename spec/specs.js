@@ -7,16 +7,16 @@
     });
  });
 
- describe("validateInputQuantity", function () {
+ describe("validInputQuantity", function () {
   it("returns false if the quantity input by the user is invalid", function () {
-    validateInputQuantity(0).should.equal(false);
-    validateInputQuantity(-1).should.equal(false);
+    validInputQuantity(0).should.equal(false);
+    validInputQuantity(-1).should.equal(false);
   });
  });
 
-describe("validateInputUnitCost", function () {
+describe("validInputUnitCost", function () {
   it("returns false if the unit cost input by the user is invalid", function () {
-    validateInputUnitCost(0).should.equal(false);
-    validateInputUnitCost(-1).should.equal(false);
+    validInputUnitCost(0).should.equal(false);
+    validInputUnitCost(-1).should.equal(false);
   });
 });

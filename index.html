@@ -5,38 +5,43 @@
   <link href="./css/styles.css" rel="stylesheet" text="text/css">
   <script src="./js/jquery-1.11.1.js"></script>
   <script src="./js/scripts.js"></script>
-  <title>Scrabble Score Calculator</title>
+  <title>Expense Tracker</title>
 </head>
 
 <body>
-  <div class="row">
-    <div class="col-md-5">
-      <br><br><img src="./img/scrabble.jpg" class="photo-width">
+  <div class="container">
+    <div class="row">
+      <img src="./img/expenses.jpg" class="photo-width pull-left">
+      <h1>Expense Tracker</h1>
     </div>
-    <div class="col-md-4">
-      <br><br><h1>Scrabble Score Calculator</h1>
-      <p><b>If you input a word, the computer will return the Scrabble score.</b><br>
-        <span class="small-type">Please note that any input except letters is not allowed, including apostrophes and hyphens.</span></p>
-      <form class="form-group" id="input-form">
-        <div class="has-feedback">
-          <label for="input-word" class="control-label">Word for which to get Scrabble score</label>
-          <input id="input-word" type="text" class="form-control" placeholder="Word" size=40><br>
-          <label for="use-file">Do you want to use the sowpods.txt Scrabble valid word dictionary?</label>
-          <p><input name="use-file" type="radio" value="1">Yes&nbsp&nbsp&nbsp&nbsp
-             <input name="use-file" type="radio" value="0">No</p><br>
-        </div>
-        <button class="btn btn-success btn-sm" type="submit">Give me the score!</button>
-      </form>
-    </div>
-  </div> <!-- row -->
-  <div class="row">
-    <div id="show-results">
-      <div class="col-md-5">
-      </div>
+    <div class="row">
       <div class="col-md-4">
-      <h4><b>You input <span class="input-word-out"></span>. Its Scrabble score is <span class="scrabble-score"></span>.</h4>
-      </div>
-    </div>
-  </div>
+        <h3>Add purchase</h3><br>
+        <form id="add-purchase">
+          <div class="form-group">
+            <input type="text" id="input-desc" class="required form-control" placeholder="Description"><br>
+            <input type="text" id="input-qty" class="required form-control" placeholder="Quantity" size="10"><br>
+            <input type="text" id="input-unit-cost" class="required form-control" placeholder="Unit Cost" size="10">
+          </div> <!-- form group -->
+          <button type="submit" class="btn btn-success">Track!</button>
+        </form>
+      </div> <!-- first col-md-4 -->
+      <div class="col-md-4">
+        <h3>Purchases</h3><br>
+        <table class="table table-bordered table-condensed">
+          <theader>
+            <th>Description</th>
+            <th>Total Amount</th>
+          </theader>
+          <tbody class="table-striped">
+
+          </tbody>
+        </table>
+      </div> <!-- second col-md-4 -->
+    </div> <!-- row -->
+  </div> <!-- container -->
 </body>
 </html>
+
+
+
