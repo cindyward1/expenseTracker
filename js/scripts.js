@@ -14,3 +14,11 @@ var validateInputQuantity = function(inputQuantity) {
     return false;
   };
 };
+
+var validateInputUnitCost = function(inputUnitCost) {
+  if (inputUnitCost > 0) {
+    return true;
+  } else {
+    return false;
+  };
+};

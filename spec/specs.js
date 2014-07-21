@@ -14,3 +14,9 @@
   });
  });
 
+describe("validateInputUnitCost", function () {
+  it("returns false if the unit cost input by the user is invalid", function () {
+    validateInputUnitCost(0).should.equal(false);
+    validateInputUnitCost(-1).should.equal(false);
+  });
+});
