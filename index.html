@@ -16,28 +16,51 @@
     </div>
     <div class="row">
       <div class="col-md-4">
-        <h3>Add purchase</h3><br>
-        <form id="add-purchase">
+        <h3>Categories</h3>
+      </div>
+      <div class="col-md-4 add-purchase-header1">
+        <h3></h3>
+      </div>
+      <div class="col-md-4 add-purchase-header2">
+        <h3></h3>
+      </div>
+    </div> <!-- end header row -->
+    <div class="row">
+      <div class="col-md-4">
+        <dl class="categories">
+        </dl>
+        <form id="add-category">
           <div class="form-group">
-            <input type="text" id="input-desc" class="required form-control" placeholder="Description"><br>
-            <input type="text" id="input-qty" class="required form-control" placeholder="Quantity" size="10"><br>
-            <input type="text" id="input-unit-cost" class="required form-control" placeholder="Unit Cost" size="10">
+            <label for="input-category">Category Name</label>
+            <input type="text" id="input-category" class="form-control" required placeholder="New Category"><br>
           </div> <!-- form group -->
-          <button type="submit" class="btn btn-success">Track!</button>
+          <button type="submit" class="btn btn-success">Add</button>
         </form>
       </div> <!-- first col-md-4 -->
       <div class="col-md-4">
-        <h3>Purchases</h3><br>
-        <table class="table table-bordered table-condensed">
+        <form id="add-purchase">
+          <div class="form-group">
+            <label for="input-desc">Purchase Description</label>
+            <input type="text" id="input-desc" class="form-control" required placeholder="Description"><br>
+            <label for="input-qty">Quantity Purchased</label>
+            <input type="text" id="input-qty" class="form-control" required placeholder="Quantity" size="10"><br>
+            <label for="input-unit-cost">Cost Per Item</label>
+            <input type="text" id="input-unit-cost" class="form-control" required placeholder="Unit Cost" size="10">
+          </div> <!-- form group -->
+          <button type="submit" class="btn btn-success">Track!</button>
+        </form>
+      </div> <!-- second col-md-4 -->
+      <div class="col-md-4">
+        <table class="table table-bordered table-condensed table-striped">
           <theader>
             <th>Description</th>
             <th>Total Amount</th>
           </theader>
-          <tbody class="table-striped">
+          <tbody class="tbody-list">
 
           </tbody>
         </table>
-      </div> <!-- second col-md-4 -->
+      </div> <!-- third col-md-4 -->
     </div> <!-- row -->
   </div> <!-- container -->
 </body>

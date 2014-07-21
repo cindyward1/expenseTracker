@@ -6,3 +6,12 @@
 	width: 250px;
 	padding-right: 24px;
 }
+
+dt {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+dt:hover {
+  text-decoration: underline;
+}
