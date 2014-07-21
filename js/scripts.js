@@ -6,3 +6,11 @@ var Purchase = {
     return inputQuantity * inputUnitCost;
   }
 };
+
+var validateInputQuantity = function(inputQuantity) {
+  if (inputQuantity > 0) {
+    return true;
+  } else {
+    return false;
+  };
+};

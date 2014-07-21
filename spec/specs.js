@@ -6,3 +6,11 @@
       });
     });
  });
+
+ describe("validateInputQuantity", function () {
+  it("returns false if the quantity input by the user is invalid", function () {
+    validateInputQuantity(0).should.equal(false);
+    validateInputQuantity(-1).should.equal(false);
+  });
+ });
+
